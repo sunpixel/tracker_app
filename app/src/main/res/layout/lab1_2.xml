@@ -31,76 +31,77 @@
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="Submit" />
 
     <ImageView
         android:id="@+id/appLogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher_round"
         android:layout_marginBottom="16dp"
-        android:scaleType="fitCenter"/>
+        android:contentDescription="TODO"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher_round" />
 
     <CheckBox
         android:id="@+id/termsCheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I agree to terms and conditions"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="I agree to terms and conditions" />
 
     <RadioGroup
         android:id="@+id/genderGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/maleRadio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male"/>
+            android:text="Male" />
 
         <RadioButton
             android:id="@+id/femaleRadio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female"/>
+            android:text="Female" />
     </RadioGroup>
 
     <Switch
         android:id="@+id/notificationsSwitch"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:text="Enable Notifications"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="Enable Notifications" />
 
     <ProgressBar
         android:id="@+id/loadingProgress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
 
     <SeekBar
         android:id="@+id/volumeSeekbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:minWidth="450dp"
+        android:layout_marginBottom="16dp"
+        android:max="100"
         android:maxWidth="450dp"
         android:min="0"
-        android:max="100"
-        android:progress="50"
-        android:layout_marginBottom="16dp"/>
+        android:minWidth="450dp"
+        android:minHeight="48dp"
+        android:progress="50" />
 
     <RatingBar
         android:id="@+id/appRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:numStars="5"
-        android:stepSize="1"
-        android:rating="4"/>
+        android:rating="4"
+        android:stepSize="1" />
 
 </LinearLayout>
