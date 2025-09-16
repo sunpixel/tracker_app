@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmls:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xmls="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ToggleButton
+            android:id="@+id/button_b"
+            android:layout_height="wrap_content"
+            android:textOff="B"
+            android:textOn="B" />
+        <ToggleButton
+            android:id="@+id/button_i"
+            android:layout_height="wrap_content"
+            android:textOff="I"
+            android:textOn="I"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="&amp;!!!"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+        <TextView
+            android:id="@+id/size"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="20"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/button_plus"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+        <Button
+            android:id="@+id/button_minus"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+    </TableRow>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/button_sans"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="SansSerif"/>
+                <RadioButton
+                    android:id="@+id/button_serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Serif"/>
+                <RadioButton
+                    android:id="@+id/button_monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Monospace"/>
+            </RadioGroup>
+        </LinearLayout>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+        android:id="@+id/edit_text"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:text="Форматируемый текст"/>
+    </TableRow>
+
+</TableLayout>
+
+
+
